@@ -1,9 +1,8 @@
 import React from "react";
-import axios from "axios";
 import Searchform from "./Searchform";
 import "./Weather.css";
 
-export default function Weather(props) {
+export default function Weather() {
   let weatherData = {
     date: "MONDAY, September 27th, 2021",
     city: "Frankfurt am Main",
@@ -58,21 +57,6 @@ export default function Weather(props) {
           </div>
         </div>
       </div>
-    </div>
-  );
-
-  function handleResponse(response) {
-    alert(
-      `The weather in ${response.data.name} is ${response.data.main.temp}°C`
-    );
-  }
-  let apiKey = "04a98ae7fdb3f2cafdd7baf39408fddb";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(handleResponse);
-  return (
-    <div>
-      <h2>Hello from Weather</h2>
-      <Searchform />
     </div>
   );
 }
