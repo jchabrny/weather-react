@@ -1,0 +1,41 @@
+.Weather {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-image: url(./blue.jpg);
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+  text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+}
+
+.Main {
+  width: 200px;
+}
+
+h1,
+h2,
+h3 {
+  color: black;
+  text-shadow: -1px 0 lightblue, 0 1px lightblue, 1px 0 lightblue,
+    0 -1px lightblue;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 5px;
+  padding: 0;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}

@@ -1,0 +1,10 @@
+.btn {
+  background-color: lightblue;
+  color: whitesmoke;
+  border: white;
+}
+
+btn.hover {
+  background-color: whitesmoke;
+  color: lightblue;
+}
