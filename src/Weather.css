@@ -9,7 +9,7 @@
   text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
 }
 
-.Main {
+.Icon {
   width: 200px;
 }
 
@@ -34,8 +34,4 @@ li {
   list-style: none;
   margin: 5px;
   padding: 0;
-}
-
-li:first-letter {
-  text-transform: capitalize;
 }
