@@ -9,8 +9,8 @@
   text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
 }
 
-.Icon {
-  width: 200px;
+.Weather canvas {
+  padding: 20px;
 }
 
 h1,
