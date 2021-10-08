@@ -35,7 +35,10 @@ export default function WeatherInfo(props) {
           </div>
           <div className="col-5">
             <ul>
-              <li>19 °C / 22 °C</li>
+              <li>
+                {Math.round(props.data.mintemperature)} °C {""} / {""}
+                {Math.round(props.data.maxtemperature)} °C
+              </li>
               <li>
                 Humidity: <span>{props.data.humidity}</span> %
               </li>

@@ -11,6 +11,8 @@ export default function Weather(props) {
       ready: true,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
+      mintemperature: response.data.main.temp_min,
+      maxtemperature: response.data.main.temp_max,
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
