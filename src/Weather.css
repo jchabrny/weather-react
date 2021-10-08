@@ -35,3 +35,14 @@ li {
   margin: 5px;
   padding: 0;
 }
+
+.btn {
+  background-color: lightblue;
+  color: whitesmoke;
+  border: white;
+}
+
+btn.hover {
+  background-color: whitesmoke;
+  color: lightblue;
+}
