@@ -7,34 +7,38 @@ export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <div className="row">
-        <div className="col-6">
+        <div className="col-3">
           <WeatherIcon code={props.data.icon} size={200} />
         </div>
-      </div>
-      <div className="col-6">
-        <h3>
-          <FormattedDate date={props.data.date} />
-        </h3>
-        <div className="row">
-          <div className="col-4">
-            <h1>{props.data.city}</h1>
-          </div>
-          <div className="col-3">
-            <ul>
-              <h2>
-                <li>
-                  <WeatherTemperature celsius={props.data.temperature} />
-                </li>
-                <li>
-                  <span className="text-capitalize">
-                    {props.data.description}
-                  </span>
-                </li>
-              </h2>
-            </ul>
-          </div>
-          <div className="col-5">
-            <ul>
+        <div className="col-2">
+          <ul>
+            <h2>
+              <li>
+                <FormattedDate date={props.data.date} />
+              </li>
+            </h2>
+            <h1>
+              <li>{props.data.city}</li>
+            </h1>
+          </ul>
+        </div>
+        <div className="col-2">
+          <ul>
+            <h2>
+              <li>
+                <WeatherTemperature celsius={props.data.temperature} />
+              </li>
+              <li>
+                <span className="text-capitalize">
+                  {props.data.description}
+                </span>
+              </li>
+            </h2>
+          </ul>
+        </div>
+        <div className="col-5">
+          <ul>
+            <h3>
               <li>
                 {Math.round(props.data.mintemperature)} °C {""} / {""}
                 {Math.round(props.data.maxtemperature)} °C
@@ -45,8 +49,8 @@ export default function WeatherInfo(props) {
               <li>
                 Wind: <span>{props.data.wind}</span> km/h
               </li>
-            </ul>
-          </div>
+            </h3>
+          </ul>
         </div>
       </div>
     </div>

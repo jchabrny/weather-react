@@ -2,7 +2,7 @@
   padding: 20px;
   border: 1px solid black;
   border-radius: 5px;
-  background-image: url(./blue.jpg);
+  background-image: url(./flowers.jpg);
   background-size: cover;
   background-position: center;
   color: whitesmoke;
@@ -11,14 +11,14 @@
 
 .Weather canvas {
   padding: 20px;
+  outline: whitesmoke 3px solid;
 }
 
 h1,
 h2,
 h3 {
   color: black;
-  text-shadow: -1px 0 lightblue, 0 1px lightblue, 1px 0 lightblue,
-    0 -1px lightblue;
+  text-shadow: -1px 0 #acc6aa, 0 1px #acc6aa, 1px 0 #acc6aa, 0 -1px #acc6aa;
 }
 
 h2 {
@@ -36,13 +36,21 @@ li {
   padding: 0;
 }
 
+a {
+  color: #77628c;
+}
+
+a:hover {
+  color: #71a0a5;
+}
+
 .btn {
-  background-color: lightblue;
+  background-color: #acc6aa;
   color: whitesmoke;
-  border: white;
+  border-color: white;
 }
 
 .btn:hover {
   background-color: whitesmoke;
-  color: lightblue;
+  color: #acc6aa;
 }
